@@ -1,0 +1,7 @@
+<%- include header %>
+<form method='post' action='/upload' enctype='multipart/form-data' >
+	<input type="file" name='file'/><br>
+	<input type="hidden" name='name' value=<%= user.name %>/><br>
+	<input type="submit" />
+</form>
+<%- include footer %>

@@ -1,0 +1,11 @@
+<%- include header %>
+<% if (results) { %>
+	<ul>
+		<% for(var i=0; i<results.length; i++) {%>
+			if(results[i].picture){
+				<img src="results[i].picture" />
+			}
+		<% } %>
+	</ul>
+<% } %>
+<%- include footer %>
