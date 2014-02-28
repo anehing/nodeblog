@@ -4,6 +4,127 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 
 */
 
+p code {
+  display: block; padding: 0.5em;
+  background: #F0F0F0;
+}
+
+p code,
+p .ruby .subst,
+p .tag .title,
+p .lisp .title {
+  color: black;
+}
+
+p .string,
+p .title,
+p .constant,
+p .parent,
+p .tag .value,
+p .rules .value,
+p .rules .value .number,
+p .pprocessor,
+p .ruby .symbol,
+p .ruby .symbol .string,
+p .ruby .symbol .keyword,
+p .ruby .symbol .keymethods,
+p .instancevar,
+p .aggregate,
+p .template_tag,
+p .django .variable,
+p .smalltalk .class,
+p .addition,
+p .flow,
+p .stream,
+p .bash .variable,
+p .apache .tag,
+p .apache .cbracket,
+p .tex .command,
+p .tex .special,
+p .erlang_repl .function_or_atom {
+  color: #800;
+}
+
+p .comment,
+p .annotation,
+p .template_comment,
+p .diff .header,
+p .chunk {
+  color: #888;
+}
+
+p .number,
+p .date,
+p .regexp,
+p .literal,
+p .smalltalk .symbol,
+p .smalltalk .char,
+p .go .constant,
+p .change {
+  color: #080;
+}
+
+p .label,
+p .javadoc,
+p .ruby .string,
+p .decorator,
+p .filter .argument,
+p .localvars,
+p .array,
+p .attr_selector,
+p .important,
+p .pseudo,
+p .pi,
+p .doctype,
+p .deletion,
+p .envvar,
+p .shebang,
+p .apache .sqbracket,
+p .nginx .built_in,
+p .tex .formula,
+p .erlang_repl .reserved,
+p .input_number {
+  color: #88F
+}
+
+p .css .tag,
+p .javadoctag,
+p .phpdoc,
+p .yardoctag {
+  font-weight: bold;
+}
+
+p .keyword,
+p .id,
+p .phpdoc,
+p .title,
+p .built_in,
+p .aggregate,
+p .smalltalk .class,
+p .winutils,
+p .bash .variable,
+p .apache .tag,
+p .go .typename,
+p .tex .command {
+  font-weight: bold;
+}
+
+p .nginx .built_in {
+  font-weight: normal;
+}
+
+p .xml .css,
+p .xml .javascript,
+p .xml .vbscript,
+p .tex .formula {
+  opacity: 0.5;
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
 pre code {
   display: block; padding: 0.5em;
   background: #F0F0F0;
