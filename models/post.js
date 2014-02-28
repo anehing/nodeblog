@@ -143,7 +143,7 @@ Post.getOne = function(name,day,title,callback){
 					if(doc.comments.length){
 						doc.comments.forEach(function (comment) {
 							// comment.content = markdown.toHTML(comment.content);
-							comment.content = markd(comment.content);
+							comment.content = marked(comment.content);
 						});
 					}
 					callback(null,doc);//返回查询的一篇文章
@@ -307,7 +307,7 @@ Post.getTen = function(name,page,callback){
 					if(docs){
 						docs.forEach(function(doc){
 							 // doc.post = markdown.toHTML(doc.post);	
-							 doc.post = markd(doc.post);	
+							 doc.post = marked(doc.post);	
 						});
 						callback(null,docs,total);
 					}else{
