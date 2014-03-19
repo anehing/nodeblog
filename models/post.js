@@ -110,6 +110,7 @@ Post.getOne = function(name,day,title,callback){
 				db.close();
 				return callback(err);
 			}
+			console.log(title)
 			//根据用户名，发表日期及文章进行查询
 			collection.findOne({
 				"name": name,
@@ -122,6 +123,7 @@ Post.getOne = function(name,day,title,callback){
 						return callback(err);
 					}
 					if(!doc){
+						console.log(doc)
 						db.close();
 						return callback("文章已不存在");
 					}

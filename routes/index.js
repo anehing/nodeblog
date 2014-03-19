@@ -20,7 +20,7 @@ module.exports = function(app){
 				posts: posts,
 				page: page,
 				isFirstPage: (page - 1) == 0,
-				isLastPage: ((page - 1) * 10 + posts.length) == total,
+				isLastPage: ((page - 1) * 2 + posts.length) == total,
 				success: req.flash('success').toString(),
 				error: req.flash('error').toString()
 			});
@@ -211,11 +211,13 @@ module.exports = function(app){
 		});
 	});
 	app.get('/u/:name/:day/:title', function (req, res) {
+		
 		Post.getOne(req.params.name, req.params.day, req.params.title, function (err, post) {
 			if (err) {
 				req.flash('error', err); 
 				return res.redirect('/');
 			}
+			
 			res.render('article', {
 				title: req.params.title,
 				post: post,
